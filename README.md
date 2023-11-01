@@ -1,5 +1,5 @@
 사용기술
--POI
+-POI\n
  - Tmap POI 데이터 뿌리기
 -Retrofit
 -GSON

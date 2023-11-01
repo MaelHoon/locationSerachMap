@@ -1,12 +1,15 @@
-사용기술
--POI
- - Tmap POI 데이터 뿌리기
--Retrofit
--GSON
--RecyclerView
- - RecyclerView를 통해 Mocking데이터 뿌리기
--Coroutines
--Google Map
--Intent
--POI Geo Reverse
--Retrofit 
+사용 기술
+1. POI
+   - Tmap POI 데이터 뿌리기
+2. Retrofit
+3. GSON
+4. RecyclerView
+   - Adapter
+   - ViewHolder
+5. Coroutines
+   - lifecycleScope
+6. Google Map
+7. Intent
+8. POI GEO Reverse
+
+      

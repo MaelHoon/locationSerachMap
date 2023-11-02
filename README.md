@@ -3,6 +3,7 @@
    - Tmap POI 데이터 뿌리기
 2. Retrofit
    - Tmap API를 받아오기 위해서 사용
+   - 받아온 데이터를 저장하기 위해 okhttp라이브러리 사용
 4. GSON
 5. RecyclerView
    - Adapter

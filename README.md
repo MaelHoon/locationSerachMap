@@ -2,14 +2,15 @@
 1. POI
    - Tmap POI 데이터 뿌리기
 2. Retrofit
-3. GSON
-4. RecyclerView
+   - Tmap API를 받아오기 위해서 사용
+4. GSON
+5. RecyclerView
    - Adapter
    - ViewHolder
-5. Coroutines
+6. Coroutines
    - lifecycleScope
-6. Google Map
-7. Intent
-8. POI GEO Reverse
+7. Google Map
+8. Intent
+9. POI GEO Reverse
 
       

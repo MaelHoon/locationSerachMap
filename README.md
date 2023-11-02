@@ -10,6 +10,7 @@
    - ViewHolder
 6. Coroutines
    - lifecycleScope
+   - API로 데이터를 비동기로 받아오기 위해서 코루틴을 사용
 7. Google Map
 8. Intent
 9. POI GEO Reverse

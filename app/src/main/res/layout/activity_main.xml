@@ -23,9 +23,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--layoutManager을 설정하는 이유 : 리스트 뷰에 뿌려질 데이터의 방향을 초기화 해줄 수 있음
+    이는 코드에서 programatical하게도 설정 가능하지만 layout에서도 초기화 가능-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylcerView"
         android:layout_width="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

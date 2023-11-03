@@ -1,22 +1,25 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
     namespace = "com.example.locationsearchmap"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.locationsearchmap"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        buildConfig = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -27,7 +30,7 @@ android {
         }
     }
 
-    viewBinding{
+    viewBinding {
         enable = true
     }
     compileOptions {
@@ -45,6 +48,13 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.squareup.okhttp3:okhttp:4.6.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.6.0") /*response와 request의 정보를 로그로 바로확인 하기위해서 의존성 추가*/
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") /*API를 받아오기 위해서 retrofit 라이브러리 사용*/
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") /*retrofit을 통해 받아온 response를 파싱하기 위해서 gson라이브러리 사용*/
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
